@@ -13,7 +13,7 @@ inv_mask = cv2.bitwise_not(mask)
 
 h, s, v = cv2.split(hsv)
 
-h = np.mod(h + 160, 180)
+h = np.mod(h + 140, 180)
 s = np.clip(s - 0, 0, 255)
 v = np.clip(v + 255, 0, 255)
 
